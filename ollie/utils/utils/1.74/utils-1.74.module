@@ -1,0 +1,140 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "ollie.utils",
+    "module": "utils",
+    "version": "1.74",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-api",
+          "version": {
+            "requires": "2.24.3"
+          }
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-core",
+          "version": {
+            "requires": "2.24.3"
+          }
+        },
+        {
+          "group": "serialiser",
+          "module": "serialiser",
+          "version": {
+            "requires": "1.29"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "utils-1.74.jar",
+          "url": "utils-1.74.jar",
+          "size": 39718,
+          "sha512": "55003e7b0c152fac63aea832918bcfe5577e2f2dde57149c5ef804e7a5dbf8e8f947f4fe87349e4d89c2728d4c4ecc3a0fddc6ecee48680d5e0d9e8184ed7b78",
+          "sha256": "b26c9f341c4c8ddb0d27e8e6400a4915a31281a63bfb8fa181e5d108b675f0a3",
+          "sha1": "fafb3565cebc63b10f1eab60c35edb6a251101a8",
+          "md5": "5c7a97b0553617608d6d86d92e1cee24"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "commons-logging",
+          "module": "commons-logging",
+          "version": {
+            "requires": "1.2"
+          }
+        },
+        {
+          "group": "commons-lang",
+          "module": "commons-lang",
+          "version": {
+            "requires": "2.4"
+          }
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-api",
+          "version": {
+            "requires": "2.24.3"
+          }
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-core",
+          "version": {
+            "requires": "2.24.3"
+          }
+        },
+        {
+          "group": "serialiser",
+          "module": "serialiser",
+          "version": {
+            "requires": "1.29"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "utils-1.74.jar",
+          "url": "utils-1.74.jar",
+          "size": 39718,
+          "sha512": "55003e7b0c152fac63aea832918bcfe5577e2f2dde57149c5ef804e7a5dbf8e8f947f4fe87349e4d89c2728d4c4ecc3a0fddc6ecee48680d5e0d9e8184ed7b78",
+          "sha256": "b26c9f341c4c8ddb0d27e8e6400a4915a31281a63bfb8fa181e5d108b675f0a3",
+          "sha1": "fafb3565cebc63b10f1eab60c35edb6a251101a8",
+          "md5": "5c7a97b0553617608d6d86d92e1cee24"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "utils-1.74-sources.jar",
+          "url": "utils-1.74-sources.jar",
+          "size": 21859,
+          "sha512": "b1c2a385aa9f5af5643039161ce946eeb1deac127b2553b2c3c2b0065cd05bd1e529db30b7f75027c7eadddaba45e1a53924b5a82bd2c9580221988022e8b506",
+          "sha256": "0d9ee96013886070297368f3d15ad898feca10b470e963dcb4902b222942351d",
+          "sha1": "4d8f875b7e785727012928b503624e8e49c26ceb",
+          "md5": "59478f17f42436a533e9ddf08310929d"
+        }
+      ]
+    }
+  ]
+}
