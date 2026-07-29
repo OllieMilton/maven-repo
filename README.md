@@ -17,11 +17,13 @@ repositories {
 
 ## Publishing
 
-Publishing writes into a local checkout, then the new files are committed and pushed:
+No checkout needed here either. Bump `version` in the project's `build.gradle.kts` and run:
 
-1. Clone this repository next to the project being published (e.g. `~/work/maven-repo`).
-2. Bump `version` in the project's `build.gradle.kts` and run `./gradlew publish`.
-3. Commit and push the new artefact directory here.
+```
+./gradlew publish
+```
+
+The build clones this repository into its build directory, publishes into the clone, then commits and pushes the result (commit message `Published group:artifact:version`). Push access via ssh is all that is required. To publish somewhere else (e.g. for testing) override the target with `-PmavenRepoGitUri=<uri>`.
 
 Note that raw.githubusercontent.com caches responses for a few minutes, so a freshly published artefact can take a short while to become visible to consumers.
 
